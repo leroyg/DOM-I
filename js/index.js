@@ -40,3 +40,54 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Nav
+const nav = document.querySelector('nav');
+console.log(nav);
+const navItems = document.querySelectorAll('nav a');
+console.log(navItems);
+const navTranspose = Object.values(siteContent["nav"]);
+console.log(navTranspose);
+
+// navItems.forEach(function(link) {
+//     link.textContent = siteContent['nav']['nav-item-1'];
+//   });
+
+// for (let i = 0; i < nav.length; i++){
+//     navItems[i].textContent = siteContent['nav'][`nav-item-${i+1}`];
+//    };
+
+navItems[0].textContent = siteContent['nav']['nav-item-1'];
+navItems[1].textContent = siteContent['nav']['nav-item-2'];
+navItems[2].textContent = siteContent['nav']['nav-item-3'];
+navItems[3].textContent = siteContent['nav']['nav-item-4'];
+navItems[4].textContent = siteContent['nav']['nav-item-5'];
+navItems[5].textContent = siteContent['nav']['nav-item-6'];
+
+
+//Nav Styles
+navItems.forEach(item => (item.style.color = 'lightgrey'));
+
+//CTA SECTION
+
+
+//nav.setAttribute(siteContent["nav"][""])
+
+// contentAreaQ.forEach(item => {
+//   console.log(item);
+// });
+
+// const secondaryHeaders = document.querySelectorAll('h2');
+// console.log(secondaryHeaders);
+// console.log(secondaryHeaders[0]);
+// console.log(secondaryHeaders[1]);
+// secondaryHeaders[0].style.color = 'blue';
+// secondaryHeaders[1].style.color = 'red';
+
+// secondaryHeaders.forEach(header => {
+//   header.style.color = 'blue';
+//   header.style.fontSize = '3rem';
+//   header.style.backgroundColor = 'yellow';
+// });
+
+// secondaryHeaders.style.color = 'red';
