@@ -68,19 +68,31 @@ ctaText.getElementsByTagName('button')[0].textContent = siteContent['cta']['butt
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]['img-src']);
 
-//Top Section
+//Top Content - Features  
 let topContent = document.getElementsByClassName('text-content');
 // console.log(topContent);
-
 topContent[0].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
 topContent[0].getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content'];
 topContent[1].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['about-h4'];
 topContent[1].getElementsByTagName('p')[0].textContent = siteContent['main-content']['about-content'];
 
 //Middle
-let middleImg = document.getElementById("#middle-img");
+let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]['middle-img-src']);
 
+//Bottom Content - Services
+let bottomContent = document.getElementsByClassName('text-content');
+console.log(bottomContent);
+// "services-h4"
+// "services-content"
+bottomContent[2].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['services-h4'];
+bottomContent[2].getElementsByTagName('p')[0].textContent = siteContent['main-content']['services-content'];
+
+bottomContent[3].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['product-h4'];
+bottomContent[3].getElementsByTagName('p')[0].textContent = siteContent['main-content']['product-content'];
+
+bottomContent[4].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['vision-h4'];
+bottomContent[4].getElementsByTagName('p')[0].textContent = siteContent['main-content']['vision-content'];
 
 // navTranspose.forEach(function(link) {
 //     link.textContent = siteContent['nav']['nav-item-${i+1}'];
