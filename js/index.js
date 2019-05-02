@@ -83,18 +83,45 @@ middleImg.setAttribute('src', siteContent["main-content"]['middle-img-src']);
 //Bottom Content - Services
 let bottomContent = document.getElementsByClassName('text-content');
 console.log(bottomContent);
-// "services-h4"
-// "services-content"
+
 bottomContent[2].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['services-h4'];
 bottomContent[2].getElementsByTagName('p')[0].textContent = siteContent['main-content']['services-content'];
 
+// Product 
 bottomContent[3].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['product-h4'];
 bottomContent[3].getElementsByTagName('p')[0].textContent = siteContent['main-content']['product-content'];
 
+// Vision
 bottomContent[4].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['vision-h4'];
 bottomContent[4].getElementsByTagName('p')[0].textContent = siteContent['main-content']['vision-content'];
 
-// navTranspose.forEach(function(link) {
+
+//Contact 
+// "contact": {
+//     "contact-h4": "Contact",
+//     "address": "123 Way 456 Street Somewhere, USA",
+//     "phone": "1 (888) 888-8888",
+//     "email": "sales@greatidea.io",
+// },
+
+let contactContent = document.getElementsByClassName('contact');
+
+contactContent[0].getElementsByTagName('h4')[0].textContent = siteContent['contact']['contact-h4'];
+contactContent[0].getElementsByTagName('p')[1].textContent = siteContent['contact']['address'];
+contactContent[0].getElementsByTagName('p')[2].textContent = siteContent['contact']['phone'];
+// contactContent[0].getElementsByTagName('p')[3].textContent = siteContent['contact']['email'];
+
+// Footer 
+// "footer": {
+//     "copyright": "Copyright Great Idea! 2018"
+// },
+let footerContent = document.getElementsByClassName('footer');
+
+footerContent[0].getElementsByTagName('p')[0].textContent = siteContent['footer']['copyright'];
+
+
+
+// navTranspose.forEach(function(link) 
 //     link.textContent = siteContent['nav']['nav-item-${i+1}'];
 //      });
 
