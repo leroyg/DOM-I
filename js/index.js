@@ -69,7 +69,7 @@ let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]['img-src']);
 
 //Top Section
-let topContent = document.getElementsByClassName('text-content')[0];
+let topContent = document.getElementsByClassName('text-content');
 // console.log(topContent);
 
 topContent[0].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
