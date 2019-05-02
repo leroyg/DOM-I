@@ -55,10 +55,20 @@ navItems[3].textContent = siteContent['nav']['nav-item-4'];
 navItems[4].textContent = siteContent['nav']['nav-item-5'];
 navItems[5].textContent = siteContent['nav']['nav-item-6'];
 
+// Nav Prepend and Append
+
+let navItem7 = document.createElement('a');
+navItem7.textContent = ('Blog');
+let navItem8 = document.createElement('a');
+navItem8.textContent = ('Support');
+
+nav.prepend(navItem7);
+nav.appendChild(navItem8);
 
 //Nav Styles
-nav.forEach(item => (item.style.color = 'seagreen'));
-
+navItems.forEach(item => (item.style.color = 'seagreen'));
+navItem7.setAttribute('style','color:seagreen');
+navItem8.setAttribute('style', 'color:seagreen');
 //CTA SECTION
 let ctaText = document.getElementsByClassName('cta-text')[0];
 
