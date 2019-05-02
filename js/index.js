@@ -57,7 +57,7 @@ navItems[5].textContent = siteContent['nav']['nav-item-6'];
 
 
 //Nav Styles
-navItems.forEach(item => (item.style.color = 'seagreen'));
+nav.forEach(item => (item.style.color = 'seagreen'));
 
 //CTA SECTION
 let ctaText = document.getElementsByClassName('cta-text')[0];
@@ -115,7 +115,7 @@ contactContent[0].getElementsByTagName('p')[2].textContent = siteContent['contac
 // "footer": {
 //     "copyright": "Copyright Great Idea! 2018"
 // },
-let footerContent = document.getElementsByClassName('footer');
+let footerContent = document.getElementsByClassName('contact');
 
 footerContent[0].getElementsByTagName('p')[0].textContent = siteContent['footer']['copyright'];
 
