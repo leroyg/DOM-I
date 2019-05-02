@@ -69,6 +69,13 @@ navItems[5].textContent = siteContent['nav']['nav-item-6'];
 navItems.forEach(item => (item.style.color = 'lightgrey'));
 
 //CTA SECTION
+let ctaText = document.getElementsByClassName('cta-text')[0];
+
+ctaText.getElementsByTagName('h1')[0].textContent = siteContent['cta']['h1'];
+ctaText.getElementsByTagName('button')[0].textContent = siteContent['cta']['button'];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]['middle-img-src']);
 
 
 //nav.setAttribute(siteContent["nav"][""])
